@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jungle Rush - Endless Runner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-container">
+    <header class="hud">
+      <div>🏆 Score: <span id="score">0</span></div>
+      <div>🪙 Coins: <span id="coins">0</span></div>
+    </header>
+
+    <canvas id="gameCanvas" width="900" height="600"></canvas>
+
+    <div class="overlay" id="overlay">
+      <h1 id="message">🌿 Jungle Rush</h1>
+      <p id="instructions">
+        Dodge obstacles, jump over barriers and collect coins!
+      </p>
+      <button id="startBtn">Start Running</button>
+    </div>
+
+    <div class="mobile-controls">
+      <button data-move="left" aria-label="Move left">◀</button>
+      <button data-move="jump" aria-label="Jump">⬆</button>
+      <button data-move="slide" aria-label="Slide">⬇</button>
+      <button data-move="right" aria-label="Move right">▶</button>
+    </div>
+
+    <p class="help">
+      ← → Move &nbsp; | &nbsp; ↑ / Space Jump
+      &nbsp; | &nbsp; ↓ Slide
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
